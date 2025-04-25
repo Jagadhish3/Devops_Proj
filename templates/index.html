@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Recommender</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Recommendation System 🎬</h1>
+    <form id="recommendForm">
+      <input type="text" name="movie" id="movieInput" placeholder="Enter a movie name..." required>
+      <button type="submit">Recommend</button>
+    </form>
+    <ul id="resultList"></ul>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
